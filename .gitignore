@@ -1,0 +1,73 @@
+# ==============================================================================
+# .gitignore — Terrorism and Political Violence (TPV) Submission Package
+# Publisher: Routledge / Taylor & Francis | Replication: https://github.com/Donzhumber/TPV.git
+# ==============================================================================
+
+# macOS metadata
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# LaTeX build & intermediate files
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.nav
+*.snm
+*.toc
+*.vrb
+*.spl
+missfont.log
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Lean 4 / Lake build artifacts
+.lake/
+lean/.lake/
+lean/build.log
+
+# Editors & IDE temporary files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*~
+
+# ==============================================================================
+# Whitelist Essential Research Assets
+# ==============================================================================
+!*.pdf
+!*.zip
+!*.pt
+!*.pt.json
+!*.dta
+!*.xlsx
+!*.csv
+!*.json
+!main/*.bbl
+!appendix_A_micro/*.bbl
+!appendix_B_proofs/*.bbl
+!Appendix_C_Streamlit/*.bbl
