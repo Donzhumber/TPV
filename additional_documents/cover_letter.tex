@@ -1,10 +1,11 @@
-\documentclass[12pt]{article}
-\usepackage[margin=1in]{geometry}
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage[margin=0.85in]{geometry}
 \usepackage{setspace}
-\usepackage{hyperref}
 \usepackage{amsmath,amssymb}
-\usepackage{lmodern}
-\renewcommand{\labelitemi}{\ensuremath{\bullet}}
+\usepackage{hyperref}
+\urlstyle{same}
 
 \hypersetup{
     colorlinks=true,
@@ -17,15 +18,16 @@
 \singlespacing
 
 \begin{flushright}
-Prof. Humberto Bernal \\
+\textbf{Prof. Humberto Bernal, Ph.D.} \\
 Universidad Colegio Mayor de Cundinamarca \\
 Ph.D. in Economics, Universidad de los Andes, Colombia \\
+Academic CV: \url{https://donzhumber.github.io/} \\
 E-mail: \href{mailto:hbernal@uniandes.edu.co}{hbernal@uniandes.edu.co}, \href{mailto:hbernalc@universidadmayor.edu.co}{hbernalc@universidadmayor.edu.co} \\
 ORCID: \href{https://orcid.org/0000-0002-4864-1726}{0000-0002-4864-1726} \\
 \today
 \end{flushright}
 
-\vspace{1.5em}
+\vspace{0.8em}
 
 \begin{flushleft}
 Prof. James J.F. Forest, Editor-in-Chief \\
@@ -33,52 +35,41 @@ Prof. James J.F. Forest, Editor-in-Chief \\
 Routledge, Taylor \& Francis
 \end{flushleft}
 
-\vspace{1.5em}
+\vspace{0.8em}
 
 \noindent Dear Professor Forest,
 
-\vspace{1.5em}
+\vspace{0.5em}
 
-\noindent It is a great privilege to submit the manuscript entitled \textbf{``Identifying Rational Types in Unknown Environments under an Indirect Dynamic Mechanism''} for consideration for publication in \textit{Terrorism and Political Violence}.
+\noindent I submit the manuscript entitled \textbf{``Identifying Rational Types in Unknown Environments under an Indirect Dynamic Mechanism''} for publication consideration in \textit{Terrorism and Political Violence}.
 
-Given the distinguished international reputation and interdisciplinary leadership of \textit{Terrorism and Political Violence} in publishing rigorous research on the strategic, behavioral, and organizational dynamics of political violence, insurgency, and terrorism, we believe the journal provides the ideal venue for this study. 
+\vspace{0.5em}
 
-In conflict and counter-terrorism settings---specifically involving armed insurgent organizations such as the Revolutionary Armed Forces of Colombia (FARC), the National Liberation Army (ELN), and United Self-Defense Forces of Colombia (AUC) paramilitaries---strategic interactions are characterized by pervasive information asymmetry, clandestine operations, and observational pooling. Standard direct revelation mechanisms break down because violent non-state actors possess powerful incentives to conceal or misrepresent their latent operational types, capabilities, and objectives. 
+\noindent In asymmetric conflicts, non-state armed groups conceal their capabilities, organizational structure, and ideological motivation. When direct communication fails, strategic interactions between the state and armed actors produce observational pooling. To analyze this problem, this paper formulates an indirect dynamic screening mechanism. The model introduces the Mano de Dios Guadalupe (MDG) implementation kernel, a maximum entropy stochastic formulation that maintains full support across executed actions and preserves well defined off-path Bayesian updating in Perfect Bayesian Equilibrium.
 
-This paper develops a novel dynamic mechanism design framework tailored to the strategic and behavioral dynamics of terrorist and insurgent organizations under observational pooling. Grounded in microdata from Colombia's Centro Nacional de Memoria Hist\'orica (CNMH) spanning over four decades of conflict, the manuscript makes four central theoretical, computational, and policy contributions directly aligned with the scope of \textit{Terrorism and Political Violence}:
+\vspace{0.5em}
 
-\begin{enumerate}
-    \item \textbf{Dynamic Indirect Mechanism for Insurgency Screening:} Rather than relying on abstract direct communication schemes that are unworkable in violent conflict environments, we formalize an indirect dynamic screening mechanism. The state (principal) deploys observable counter-terrorism and counter-kidnapping instruments, while insurgent groups (agents) best-respond dynamically based on private financial pressure, ideological commitment, and logistical vulnerability.
-    
-    \item \textbf{Stochastic Implementation via the Mano de Dios--Guadalupe (MDG) Process:} To capture tactical frictions, intelligence failures, and operational hazards in high-stakes conflict environments, the MDG process endogenously generates execution noise under maximum-entropy constraints. This ensures full support across action paths, sustaining well-defined off-path Bayesian updating and guaranteeing that the interaction is implementable in Perfect Bayesian Equilibrium (PBE).
-    
-    \item \textbf{The Rational Type Identification Theorem and Insurgent Typology:} The core theoretical contribution establishes that under recurrently separated observable signals (captivity duration and competing terminal hazards: military rescue, ransom payment, escape, execution), trajectory measures across distinct insurgent types become mutually singular. Consequently, the counter-terrorism planner's Bayesian posterior beliefs converge almost surely to the true latent type of the insurgent cell (separating opportunistic criminal factions from disciplined ideological guerrillas).
-    
-    \item \textbf{Counter-Terrorism Policy Design ($\alpha$ vs.\ $\gamma$):} Using microeconometric competing-risks duration models and deep-learning neural network value approximators, the paper evaluates the structural trade-offs between financial interdiction ($\alpha$, freezing illicit financial flows and ransom assets) and operational pressure ($\gamma$, military and police tactical interventions). We establish the policy frontier governing captive survival, extraction efficiency, and conflict duration, showing how aggressive military intervention can perversely accelerate hostage executions unless properly calibrated with intelligence-driven financial pressure.
-\end{enumerate}
+\noindent The primary analytical contribution is the Rational Type Identification Theorem. The theorem proves that under recurrently separated signals, the trajectory measures of distinct armed factions are mutually singular. As a result, the state planner's posterior beliefs converge almost surely to the true latent type of the group during prolonged captivity, separating ideological guerrillas from criminal syndicates without direct revelation reports.
 
-To ensure complete transparency, reproducibility, and rigorous scientific validation:
-\begin{itemize}
-    \item The complete mathematical proofs and asymptotic lemmas are formally verified using the \textbf{Lean 4 Interactive Theorem Prover} (Supplementary Appendix~B).
-    \item Comprehensive microeconometric scripts (Stata) and analytical datasets are documented in Supplementary Appendix~A.
-    \item An interactive simulation tool is publicly hosted at \url{https://7kkgn4sfscykkfvv5794qw.streamlit.app/} and documented in Supplementary Appendix~C.
-    \item All replication code, data files, Lean~4 formal proofs, and supplementary materials are openly available in the public GitHub repository: \url{https://github.com/Donzhumber/TPV.git}.
-\end{itemize}
+\vspace{0.5em}
 
-The manuscript has not been published previously, nor is it under consideration for publication elsewhere. In accordance with \textit{Terrorism and Political Violence}'s double-blind peer review policy, anonymized and named versions of the manuscript, as well as a separate Title Page, have been prepared.
+\noindent The framework is calibrated using microdata from Colombia's Centro Nacional de Memoria Historica on kidnappings conducted by the FARC, ELN, paramilitaries, and criminal groups. Using competing risks duration models and deep learning value function approximations, the paper evaluates policy trade-offs between financial interdiction ($\alpha$) and tactical operational pressure ($\gamma$). All mathematical proofs are verified in the Lean 4 interactive theorem prover, with complete replication materials hosted at \url{https://github.com/Donzhumber/TPV.git} and an interactive simulation tool available at \url{https://7kkgn4sfscykkfvv5794qw.streamlit.app/}.
 
-Thank you very much for your time, consideration, and editorial guidance.
+\vspace{0.5em}
 
-\vspace{2.5em}
+\noindent The manuscript is original and is not under review elsewhere. Anonymized and named files have been prepared in compliance with double-blind peer review requirements. Thank you for your consideration.
+
+\vspace{1.2em}
 
 \begin{flushleft}
 Sincerely,
 
-\vspace{2.5em}
+\vspace{1.0em}
 
 \textbf{Prof. Humberto Bernal, Ph.D.} \\
 Universidad Colegio Mayor de Cundinamarca \\
-Ph.D. in Economics, Universidad de los Andes, Colombia
+Ph.D. in Economics, Universidad de los Andes, Colombia \\
+Academic CV: \url{https://donzhumber.github.io/}
 \end{flushleft}
 
 \end{document}
